@@ -27,7 +27,7 @@ app.directive('inputMap', function(){
 			if(attr.color)
 				scope.vars.color = attr.color;
 			if(attr.zoom)
-				scope.vars.zoom = attr.zoom;
+				scope.vars.zoom = Number(attr.zoom);
 
 			/*THESE CONSTANTS ARE REQUIRED*/
 			scope.consts = {};
